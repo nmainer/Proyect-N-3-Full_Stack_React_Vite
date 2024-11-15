@@ -10,5 +10,9 @@ export default defineConfig({
     },
     hmr: true,
   },
+  build: {
+    outDir: 'dist',  // Directorio de salida para la build de producción
+  }
 });
+
 
