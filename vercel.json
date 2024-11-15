@@ -1,0 +1,22 @@
+{
+  "builds": [
+    {
+      "src": "front/vite-project/package.json",
+      "use": "@vercel/static-build"
+    },
+    {
+      "src": "back/package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/back/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/front/vite-project/$1"
+    }
+  ]
+}
