@@ -17,6 +17,10 @@
     {
       "src": "/(.*)",
       "dest": "/front/vite-project/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/front/vite-project/index.html"
     }
   ]
 }
